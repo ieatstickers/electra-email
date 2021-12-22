@@ -21,10 +21,17 @@ class Email
   /** @var string[]  */
   private $attachments = [];
 
+  private function __construct()
+  {}
+
   /** @return Email */
-  public static function create(): Email
+  public static function create(string $subject, string $content, string $fromEmail, string ...$recipient): Email
   {
-    return new Email();
+    return (new Email())
+      ->setSubject($subject)
+      ->setContent($content)
+      ->setFromEmail($fromEmail)
+      ->addRecipient(...$recipient);
   }
 
   /** @return string[] */
