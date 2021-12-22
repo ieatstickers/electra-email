@@ -1,0 +1,15 @@
+{
+  "name": "electra/email",
+  "minimum-stability": "dev",
+  "require": {},
+  "authors": [
+    {
+      "name": "Mike Burke"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Electra\\Email\\": "src"
+    }
+  }
+}
