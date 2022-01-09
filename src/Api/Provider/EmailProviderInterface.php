@@ -6,9 +6,6 @@ use Electra\Email\Api\Email;
 
 interface EmailProviderInterface
 {
-  /** @return EmailProviderInterface */
-  public static function init(): EmailProviderInterface;
-
   /**
    * @param Email $email
    *

@@ -1,7 +1,9 @@
 {
   "name": "electra/email",
   "minimum-stability": "dev",
-  "require": {},
+  "require": {
+    "phpmailer/phpmailer": "dev-master"
+  },
   "authors": [
     {
       "name": "Mike Burke"
